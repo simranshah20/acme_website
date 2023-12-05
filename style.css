@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    /* padding: 0;
+    margin: 0; */
+    background-color: #f4f4f4;
+}
+/* global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.button{
+ height: 38px;
+ background: #e8491d;
+ border: none;
+ padding-left: 20px;
+ padding-right: 20px;
+ color:#ffffff;
+}
+.dark{
+ padding: 15px;  
+ color: #ffffff;
+ background: #35424a; 
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+
+/* ul{
+    margin: 0;
+    padding: 0;
+} */
+
+/* header section starts*/
+header{
+ background: #35424a;
+ color: #ffffff;
+ padding-top: 30px;
+ min-height: 70px;
+ border-bottom: #e8491d 3px solid;
+}
+/* ancher tag */
+header a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* list */
+header li{
+    float: left;
+    /* for horizontal menu */
+    display: inline;
+    /* padding in top=0 right=20px button=0 left=20px */
+    padding: 0 20px 0 20px;
+}
+ header #branding{
+    float: left;
+}
+header #branding h1{
+    margin: 0;
+}
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight,header .current a{
+color: #e8491d;
+font-weight: bold;
+}
+/* hover on <a> */
+header a:hover{
+color: #cccccc;
+font-weight: bold;
+}
+/* header section ends */
+
+/* showcase section starts */
+ #showcase{
+    min-height: 400px;
+    background-image:url(img/showcase.jpg) ;
+    /* do not repeat image */
+    background-repeat: no-repeat;
+    /* x-axis */
+    background-position-x: 0;
+    /* y-axis */
+    background-position-y: -400px;
+    text-align: center;
+    color: #fff;
+ }
+ /* h1 */
+ #showcase h1{
+    margin-top: 100px;
+    margin-bottom: 10px;
+    font-size: 55px;
+}
+#showcase p{
+  font-size: 20px;  
+}
+/* showcase section starts */
+
+/* newsletter section starts */
+#newsletter{
+    padding: 15px;
+    color: #ffffff;
+    background: #35424a;
+}
+#newsletter h1{
+float: left;
+}
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width:250px;
+}
+/* newsletter section ends */
+
+/* box section starts */
+ #boxes{
+    margin-top: 20px;
+ }
+ #boxes .box{
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+ }
+ #boxes .box img{
+    width: 90px;
+ }
+/* box section ends */
+
+/* footer starts */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color:#e8491d;
+    text-align: center;
+}
+/* footer ends */
+
+/* sidebar of about section starts */
+ aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top:10px;
+ }
+/* sidebar ends */
+
+/* main-col of about section starts */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+ /* main-col of about section ends */
+
+ /* services section starts */
+  ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+  }
+  aside#sidebar .quote input,aside#sidebar .quote input{
+   width: 90%;
+   padding: 5px; 
+  }
+ /* services section ends */
+
+ /* media queries for responsive */
+ @media(max-width:760px) {
+   header #branding,
+   header nav,
+   header nav li,
+   #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+   }
+   header{
+    padding-bottom: 20px;
+    }
+   #showcase h1{
+    margin-top: 40px;
+   }
+   #newsletter button,.quote button{
+    display: block;
+    width: 100%;
+   }
+   #newsletter form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+ 
+ }
